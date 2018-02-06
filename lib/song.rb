@@ -40,8 +40,8 @@ class Song
     # info[1] = song_name
   end
 
-  def self.new_from_filename(artist_name) #working on
-    self.all.each do |song, artist_name|
+  def self.new_from_filename(song) #working on
+    self.all.each do |song|
       song.name = info[0]
       song.artist_name = info[1]
     end #each iteration
