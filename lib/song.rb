@@ -43,7 +43,9 @@ class Song
   def self.new_from_filename(artist_name) #working on
     song = []
     artist_name = []
-    name << self.gsub(/.mp3/, "").split(" - ")
+    info = self.gsub(/.mp3/, "").split(" - ")
+    artist_name << info[0]
+    song_name << info[1]
     self.all.each do |name, artist_name|
       song.name = song.parse_filename
       #song.artist_name = info[1]
