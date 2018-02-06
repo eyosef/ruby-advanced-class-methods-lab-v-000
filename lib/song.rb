@@ -41,7 +41,7 @@ class Song
 
   end
 
-  def self.new_from_filename(song, artist_name) #working on
+  def self.new_from_filename(song) #working on
     # self.all.each do |song, artist_name|
     #   song.name = info[0]
     #   song.artist_name = info[1]
