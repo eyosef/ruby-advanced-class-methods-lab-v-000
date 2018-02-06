@@ -31,7 +31,7 @@ class Song
   end
 
   def self.alphabetical #working on - look at  Advanced Class Methods,self.normalize_names
-    self.all.sort_by { |a,b| a <=> b }
+    alpha = self.all.sort_by { |a,b| a <=> b }
   end
 
   def self.parse_filename(song) #my own creation - mwahahaha
