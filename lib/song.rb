@@ -40,6 +40,7 @@ class Song
 
     name = song.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
     song = self.new_by_name(name)
+    song = self.new_by_name(artist_name)
     song
   end #method
 
