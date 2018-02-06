@@ -43,7 +43,7 @@ class Song
   def self.new_from_filename(song) #working on
     self.all.each do |song|
       song.name = song.parse_filename
-      song.artist_name = info[1]
+      #song.artist_name = info[1]
     end #each iteration
     #     info = song.gsub(/.mp3/, "").split(" - ") #removed .mps and parsed string based on '-'
     #     info[0] = artist_name #FIX #"Thundercat"
