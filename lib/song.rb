@@ -44,7 +44,7 @@ class Song
 
   def self.create_from_filename(file_name)
     name = file_name.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
-    song = self.new_by_name(name)
+    song = self.create_by_name(name)
 
     song.artist_name = file_name.gsub(/.[-].+/, "") #thundercat
     song
