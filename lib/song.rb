@@ -34,7 +34,7 @@ class Song
     self.all.sort_by { |song| song.name }
   end
 
-  def song.new_from_filename(song) #working on
+  def song.new_from_filename #working on
     song.gsub(/.[-].+/, "") #thundercat
     song.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
   end #method
