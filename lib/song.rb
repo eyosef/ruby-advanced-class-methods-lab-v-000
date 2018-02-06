@@ -42,7 +42,6 @@ class Song
 
   def self.new_from_filename(artist_name) #working on
     self.all.each do |song|
-      binding.pry
       song.name = song.parse_filename
       #song.artist_name = info[1]
     end #each iteration
