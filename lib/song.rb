@@ -44,7 +44,7 @@ class Song
   def self.new_from_filename(song) #working on
     song.gsub(/.mp3/, "").split(" - ")
     song.new = song.gsub(/.mp3/, "").split(" - ")
-
+    binding.pry
   end #method
 
   def self.all #created by lab
