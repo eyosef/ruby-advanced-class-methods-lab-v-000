@@ -42,7 +42,7 @@ class Song
   end
 
   def self.new_from_filename(song) #working on
-    song.gsub(/.mp3/, "").split(" - ") #removed .mps and parsed string based on '-'
+    song.gsub(/.mp3/, "").split(" - ")
 
   end #method
 
