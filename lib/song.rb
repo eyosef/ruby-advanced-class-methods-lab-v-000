@@ -45,7 +45,7 @@ class Song
     @song=song
     song.name = song.gsub(/.[-].+/, "") #thundercat
     song.gsub(/.+[-]./, "") #for love i come
-
+    binding.pry
     #song.gsub(/.mp3/, "").split(" - ")
     #song.new =
   end #method
