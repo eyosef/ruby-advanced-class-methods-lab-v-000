@@ -34,7 +34,7 @@ class Song
     self.all.sort_by { |song| song.name }
   end
 
-  def self.new_from_filename(file_name) #working on
+  def self.new_from_filename(file_name)
     name = file_name.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
     song = self.new_by_name(name)
 
