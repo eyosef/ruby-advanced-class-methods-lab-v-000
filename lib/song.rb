@@ -34,17 +34,16 @@ class Song
     self.all.sort_by { |song| song.name }
   end
 
-  def parse_filename(song) #my own creation - mwahahaha
+  def self.parse_filename(song) #my own creation - mwahahaha
     info = song.gsub(/.mp3/, "").split(" - ")
-    # info[0] = artist_name
-    # info[1] = song_name
+    info[0] = artist_name
+    info[1] = song_name
   end
 
-  def self.new_from_filename(artist_name) #working on
-    self.all.each do |name, artist_name|
-      song.name = song.parse_filename
-          binding.pry
-      #song.artist_name = info[1]
+  def self.new_from_filename(song, artist_name) #working on
+    self.all.each do |song, artist_name|
+      song.name = info[0]
+      song.artist_name = info[1]
     end #each iteration
     #     info = song.gsub(/.mp3/, "").split(" - ") #removed .mps and parsed string based on '-'
     #     info[0] = artist_name #FIX #"Thundercat"
