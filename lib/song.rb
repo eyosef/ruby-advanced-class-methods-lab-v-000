@@ -34,7 +34,7 @@ class Song
     self.all.sort_by { |song| song.name }
   end
 
-  def parse_filename #my own creation - mwahahaha
+  def parse_filename(song) #my own creation - mwahahaha
     song.gsub(/.mp3/, "").split(" - ")
     binding.pry
     # info[0] = artist_name
