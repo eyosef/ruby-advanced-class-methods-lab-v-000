@@ -40,7 +40,7 @@ class Song
     info = []
     info = self.gsub(/.mp3/, "").split(" - ")
     artist_name << info[0]
-    song_name << info[1]
+    song << info[1]
     # info[0] = artist_name
     # info[1] = song_name
   end
