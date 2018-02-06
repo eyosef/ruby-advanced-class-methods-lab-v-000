@@ -51,6 +51,7 @@ class Song
   end
 
   def self.destroy_all(all)
+    @@all.clear
   end
 
   def self.all #created by lab
