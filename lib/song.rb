@@ -36,8 +36,8 @@ class Song
 
   def self.new_from_filename(song) #working on
     binding.pry
-    song.artist_name = song.gsub(/.[-].+/, "") #thundercat
-    song.name = song.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
+    artist_name = song.gsub(/.[-].+/, "") #thundercat
+    name = song.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
   end #method
 
   def self.all #created by lab
