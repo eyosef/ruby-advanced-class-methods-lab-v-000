@@ -38,7 +38,7 @@ class Song
     info = song.gsub(/.mp3/, "").split(" - ")
     info[0] = artist_name
     info[1] = song_name
-    binding.pry
+
   end
 
   def self.new_from_filename(song, artist_name) #working on
