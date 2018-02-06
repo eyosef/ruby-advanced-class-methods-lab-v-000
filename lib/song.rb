@@ -40,7 +40,7 @@ class Song
     # info[1] = song_name
   end
 
-  def self.new_from_filename(song) #working on
+  def self.new_from_filename(artist_name) #working on
     self.all.each do |song|
       binding.pry
       song.name = song.parse_filename
