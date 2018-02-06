@@ -43,6 +43,7 @@ class Song
   def self.new_from_filename(artist_name) #working on
     song = []
     artist_name = []
+    info = []
     info = self.gsub(/.mp3/, "").split(" - ")
     artist_name << info[0]
     song_name << info[1]
