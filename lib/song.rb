@@ -49,6 +49,7 @@ class Song
         info = song.gsub(/.mp3/, "").split(" - ") #removed .mps and parsed string based on '-'
         info[0] = artist_name #FIX #"Thundercat"
         info[1] = song.name #FIX #"For Love I Come"
+        binding.pry
     end #each iteration
 
   end #method
