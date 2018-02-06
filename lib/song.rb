@@ -54,11 +54,11 @@ class Song
     @@all.clear
   end
 
-  def self.all #created by lab
+  def self.all
     @@all
   end
 
-  def save #created by lab
+  def save
     self.class.all << self
   end
 
