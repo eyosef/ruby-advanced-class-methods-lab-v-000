@@ -32,6 +32,7 @@ class Song
 
   def self.alphabetical #working on - look at  Advanced Class Methods,self.normalize_names
     alpha = self.all.sort_by { |a,b| a <=> b }
+    alpha
     binding.pry
   end
 
