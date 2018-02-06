@@ -35,9 +35,6 @@ class Song
   end
 
   def self.new_from_filename(file_name) #working on
-
-
-
     name = file_name.gsub(/.mp3/, "").gsub(/.+[-]./, "") #for love i come
     song = self.new_by_name(name)
     #fido.name="Fido"
