@@ -42,7 +42,7 @@ class Song
     song
   end #method
 
-  def self.create_From_filename(file_name)
+  def self.create_from_filename(file_name)
   end
 
   def self.all #created by lab
