@@ -39,7 +39,6 @@ class Song
     song = self.new_by_name(name)
     #fido.name="Fido"
     song.artist_name = file_name.gsub(/.[-].+/, "") #thundercat
-    song = self.new_by_name(artist_name)
     song
   end #method
 
