@@ -35,9 +35,9 @@ class Song
   end
 
   def self.parse_filename(song) #my own creation - mwahahaha
-    info = song.gsub(/.mp3/, "").split(" - ")
-    info[0] = artist_name
-    info[1] = song_name
+    self.gsub(/.mp3/, "").split(" - ")
+    # info[0] = artist_name
+    # info[1] = song_name
   end
 
   def self.new_from_filename(artist_name) #working on
