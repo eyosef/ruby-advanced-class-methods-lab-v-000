@@ -30,8 +30,8 @@ class Song
     self.find_by_name(name)
   end
 
-  def self.alphabetical #working on - look at  Advanced Class Methods,self.normalize_names
-    self.all.sort_by { |song| song.name } #{ |a,b| a <=> b }
+  def self.alphabetical #passed
+    self.all.sort_by { |song| song.name }
   end
 
   def self.parse_filename(song) #my own creation - mwahahaha
